@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// function in javascript,
+
+// normal function
+// without parameter
+function demo(){
+    console.log("hello");
+
+} 
+demo(); // function calling
+
+// with parameter
+function demo1(text){
+    console.log("hello" + text);
+}
+demo1("react");
+
+// with defualt parameter
+function cal(a,b=30){
+    console.log("addtion of tow number is " + (a+b));
+}
+cal(12);
+
+// anonyomous function
+let msg=function(){
+    console.log("hello js");
+};
+msg();
+/// short code for this code    arrow function
+let msg1=()=>console.log("hello function");
+msg1();
+// arrow function in multiline
+let add=(a,b)=>{
+    console.log("first number is"+ a);
+    console.log("this is not you"+ b);
+    console.log("addtion of two number is" + (a+b))
+}
+add(4,5);
+
+// iife
+
+(function(){
+    console.log("iife in js");
+})();
+// iift using arrow
+(()=>console.log("iife usinr arrow"))();
+// call back function
+function mul (callback){
+    var num1=10;
+    console.log("first num is" + num1);
+    var num2=20;
+    console.log("secondd num is" + num2);
+    var res=num1*num2;
+    callback(res);
+}
+function result(res){
+    console.log("multiplecation is " + res)
+}
+mul(result);
+
+// callback function using settimeout ATP
+
+function msg2(){
+    console.log("hello call back");
+} function loading(){
+    document.writteln("loding........")
+};
+settimeout(msg2,2000);
+loading();
+
+// map filter and reduce
+
+let num=[3,4,5,7];
+let finalresult=num.map((n=>n*2));
+console.log(finalresult);
+
+let finalresult1=num.filter(n=>(n>3));
+console.log(finalresult1);
+
+// reduce
+
+let finalresult2=num.reduce((total,n)=>total+n);
+console.log(finalresult2);
+
+// promises
+let promise=new Promise(function(resolve,reject){
+    let age=55;
+    if(age>=18){
+    resolve("valid age");
+}else
+{
+reject("wait for next year");
+}
+});
+</script> 
+</body>
+</html>

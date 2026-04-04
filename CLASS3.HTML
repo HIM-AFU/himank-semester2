@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    //object {} it is the collection(pair)of key(property) and its value.
+    //create object  literal{} and new obeject
+
+    //create object for student
+    let student={
+     id:101, 
+     name:"himank",
+     age:19,
+     isMarried:false,
+     address:{
+     street:26,
+     pincode:366778,
+     city:"ghaziabad",
+
+     },
+     education:["b.tech", "cse",18,2025],
+     getInfo:function(){
+return"my detail are" + student.id + " and " + student.name;
+     },
+     examDone:null
+       };
+    console.log(student);
+    console.log(typeof(student));
+
+    //
+    console.log(student.getInfo());
+
+    // find object key in object
+    console.log('id'in student);
+    console.log(delete student.name);
+    console.log(student);
+
+    for(let i=0; i<studentkeys.length; i++){
+        console.log(student[studentkey[i]]);
+    }
+    for(let x in student){
+        console.log(student[x]);
+    }
+    let myInfo=new object();
+    myinfo.name="himank";
+    myInfo.age=23;
+    myInfo.isMarried=true;
+    myInfo.city="delhi";
+    console.log(myIno)
+ </script> 
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    /// async await
+    async function userdata(){
+        try{
+          let data=await fetch('https://dummyjson.com/products')
+          let updateddata=await data.json();
+          console.log(updateddata);
+        }
+        catch(error){
+         console.log("not fetch" + error );
+        }
+    }
+    userdata();
+    // local storage
+    let userinfo={
+        name:"doja",
+        age:20,
+        mobile:34463544637,
+        email: "hdyyur@gmail.com"
+    }
+    // convert json to string
+    localstorage.setItem('preference',json.stringify(userInfo));
+
+    let storagepreference=json.parse(localstorage.getItem('prefrences'));
+    console.log(storageprefrence.name);
+   </script> 
+</body>
+</html>
