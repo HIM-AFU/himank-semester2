@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = [1, 2, 3, 4, 5  ];
+        let b = [5, 4, 3, 2, 1];
+        let c = a.concat(b) ;
+        document.write(c);
+        document.write("<br>");
+        let d = a.reverse();
+        document.write(d);document.write("<br>");
+        let e = b.sort();
+        document.write(e);document.write("<br>");
+        let f = a.join("-");
+        document.write(f);document.write("<br>");
+        let g = b.slice(1, 4);
+        document.write(g);document.write("<br>");
+        let h = a.splice(2, 1, 10);
+        document.write(a);document.write("<br>");
+        document.write(h);document.write("<br>");
+        a.pop();
+        document.write(a);document.write("<br>");
+        a.push(6);
+        document.write(a);document.write("<br>");
+        a.shift();
+        document.write(a);document.write("<br>");
+        a.unshift(0);
+        document.write(a);document.write("<br>");
+
+
+    </script>
+</body>
+</html>
